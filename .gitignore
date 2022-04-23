@@ -1,2 +1,4 @@
-node_modules
-.mp4
+node_modules/
+notas_clase/
+.cache
+dist

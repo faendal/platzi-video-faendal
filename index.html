@@ -10,7 +10,7 @@
 
     <body>
         <header>
-            <h1>PlatziMediaPlayer.js</h1>
+            <h1>PlatziMediaPlayer</h1>
             <p>An extensible media player.</p>
         </header>
 
@@ -23,37 +23,33 @@
         </main>
 
         <script>
-            function MediaPlayer(config) 
+
+            function MediaPlayer(config)
             {
                 this.media = config.el;
-            }
+            };
 
-            MediaPlayer.prototype.play = function() 
+            MediaPlayer.prototype.play = function()
             {
-                this.media.play();
+                video.play();
             };
 
             MediaPlayer.prototype.pause = function()
             {
-                this.media.pause();
+                video.pause();
             };
 
-            MediaPlayer.prototype.togglePlay = function() 
+            MediaPlayer.prototype.togglePlay = function()
             {
-                if (this.media.paused) 
-                {
-                    this.play();
-                } 
-                else 
-                {
-                    this.pause();
-                }
+                this.media.paused 
+                    ? this.play()
+                    : this.pause();
             };
 
             const video = document.querySelector('video');
-            const player = new MediaPlayer({ el: video });
-
             const button = document.querySelector('button');
+
+            const player = new MediaPlayer({ el: video });
             button.onclick = () => player.togglePlay();
         </script>
     </body>
