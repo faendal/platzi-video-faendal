@@ -1,0 +1,27 @@
+{
+  "name": "platzi-video",
+  "version": "1.0.0",
+  "description": "Proyecto del curso profesional de JavaScript en platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faendal/platzi-video-faendal.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "platzi"
+  ],
+  "author": "faendal <juanjoborrero@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/faendal/platzi-video-faendal/issues"
+  },
+  "homepage": "https://github.com/faendal/platzi-video-faendal#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
